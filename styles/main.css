@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "lol";
+    src: url("../fonts/lol.woff") format("woff");
+}
+
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+}
+
+html, body {
+   height: 100%;
+   overflow-x: hidden;
+}
+
+#top_bar_container {
+    height: 115px;
+    border-bottom: 1.5px solid white;
+    border-left: 1.5px solid white;
+    border-right: 1.5px solid white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(46, 46, 46);
+    width: 99.9%;
+    display: table;
+    position: relative;
+}
+
+#main_top_logo {
+    width: 235px;
+    background-color: transparent;
+    display: table-cell;
+    vertical-align: middle;
+    float: left;
+}
+
+#search_champ_input {
+    width: 240px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid white;
+    font-size: 20px;
+    color: white;
+    opacity: 0.55;
+    transition: 0.3s all ease;
+}
+
+#search_champ_input:focus {
+    opacity: 1;
+    transition: 0.3s all ease;
+    outline: none;
+    width: 400px;
+}
+
+#choose_champ_label {
+    color: white;
+    font-family: lol;
+    font-size: 60px;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    width: fit-content;
+    display: table;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: 0px 4px 5px #b2823f;
+}
+
+#main_container_div {
+    height: auto;
+    width: 95%;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.each_card_champ_main_container {
+    width: min-content;
+    display: inline-block;
+    margin: 0 25px 50px 25px;
+}
+
+.inner_each_champ_name_container {
+    color: white;
+    border-bottom: 2px solid rgb(56, 56, 56);
+    border-left: 2px solid rgb(56, 56, 56);
+    border-right: 2px solid rgb(56, 56, 56);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 7px;
+    padding-top: 2px;
+    margin-top: -4px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.each_champ_name {
+    font-size: 28px;
+    font-family: lol;
+}
+
+.each_champ_aka {
+    font-size: 24px;
+    font-family: lol;
+    font-style: italic;
+}
+
+#no_champ_found_label {
+    font-family: lol;
+    font-size: 50px;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#scroll_up_arrow_image {
+    width: 100px;
+    position: fixed;
+    bottom: 20px;
+    left: 25px;
+    border-radius: 100%;
+    opacity: 0.6;
+    filter: contrast(75%);
+    display: none;
+    transition: 0.2s all ease;
+}
+
+#scroll_up_arrow_image:hover {
+    opacity: 1;
+    transition: 0.2s all ease;
+    cursor: pointer;
+}
